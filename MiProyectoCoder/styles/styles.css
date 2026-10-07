@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=BJCree:wght@400;500;600;700&family=Kedebideri:wght@400;500;600;700;800;900&display=swap');
 
+/*GLOBAL*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/*ESTILOS BASE Y TIPOGRAFIA*/
 body {
     font-family: 'Kedebideri', 'Poppins', sans-serif;
     font-size: 14px;
@@ -67,15 +69,30 @@ p {
 
 /* NAV */
 .nav-principal {
-    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;            
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.brand-container {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.brand-container img {
+    max-width: 50px;
+    height: auto;
 }
 
 .nav-lista {
     list-style: none;
     display: flex;
-    justify-content: center;
+    align-items: center;
     gap: 1.5rem;
-    flex-wrap: wrap;
 }
 
 .nav-enlace {
@@ -94,10 +111,15 @@ p {
     max-width: 900px;
     margin: 2rem auto;
     padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .seccion-contenido {
-    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 /* TARJETAS */
@@ -105,14 +127,12 @@ p {
     background-color: #ffffff;
     padding: 1.5rem;
     border-radius: 8px;
-    border-left: 5px solid #d97736; /* Borde de acento HEX */
-    margin-top: 1rem;
+    border-left: 5px solid #d97736;
 }
 
 .tarjeta-articulo ul, 
 .tarjeta-articulo ol {
     margin-left: 1.5rem;
-    margin-bottom: 1rem;
 }
 
 .tarjeta-articulo li {
@@ -126,7 +146,7 @@ p {
     object-fit: cover;
     border-radius: 10px;
     display: block;
-    margin: 0.8rem 0;
+    margin-top: 0.8rem;
 }
 
 figure {
@@ -135,9 +155,11 @@ figure {
 }
 
 figure img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 6px;
+    width: 100%;
+    max-width: 550px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 figcaption {
@@ -147,6 +169,21 @@ figcaption {
     margin-top: 0.5rem;
 }
 
+/*LISTA DE SUCURSALES*/
+.lista-sucursal {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.lista-sucursal li {
+    margin-bottom: 1rem;
+}
+
 /*FOOTER*/
 .pie-pagina {
     background-color: #3c2218;
@@ -154,19 +191,22 @@ figcaption {
     text-align: center;
     padding: 1.5rem 1rem;
     margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 
 .pie-pagina p {
     color: #f7f3ef;
     font-size: 0.9rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
 }
 
 .pie-pagina ul {
     list-style: none;
     display: flex;
-    justify-content: center;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .pie-pagina a {
@@ -180,15 +220,6 @@ figcaption {
     text-decoration: underline;
 }
 
-.lista-sucursal {
-    list-style: none;
-    padding-left: 0;
-    margin-left: 0;
-    font-size: 16px;
-}
 
-.lista-sucursal li {
-    margin-bottom: 1rem;
-}
 
 
