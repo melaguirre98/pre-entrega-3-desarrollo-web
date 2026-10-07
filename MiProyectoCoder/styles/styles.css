@@ -18,7 +18,7 @@ body {
 
 h1 {
     font-family: 'BJCree', serif;
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     font-weight: 700;
     color: #3c2218; /* Primario: Café Oscuro HEX */
     margin-bottom: 0.5rem;
@@ -81,6 +81,7 @@ p {
     display: flex;
     align-items: center;
     gap: 0.8rem;
+    text-decoration: none;
 }
 
 .brand-container img {
@@ -99,7 +100,7 @@ p {
     color: #f7f3ef;
     text-decoration: none;
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 1rem;
 }
 
 .nav-enlace:hover {
