@@ -45,6 +45,8 @@ p {
     color: #2b2b2b;
 }
 
+
+/* HEADER */
 .header-principal {
     background-color: #3c2218; /* Primario HEX */
     color: #f7f3ef;
@@ -62,6 +64,8 @@ p {
     margin-bottom: 0.5rem;
 }
 
+
+/* NAV */
 .nav-principal {
     margin-top: 1rem;
 }
@@ -85,6 +89,7 @@ p {
     color: #d97736;
 }
 
+/*CONTENIDO*/
 .contenido-principal {
     max-width: 900px;
     margin: 2rem auto;
@@ -95,6 +100,7 @@ p {
     margin-bottom: 2rem;
 }
 
+/* TARJETAS */
 .tarjeta-articulo {
     background-color: #ffffff;
     padding: 1.5rem;
@@ -111,6 +117,16 @@ p {
 
 .tarjeta-articulo li {
     margin-bottom: 0.4rem;
+}
+
+.tarjeta-articulo img {
+    width: 100%;
+    max-width: 450px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 0.8rem 0;
 }
 
 figure {
@@ -131,6 +147,7 @@ figcaption {
     margin-top: 0.5rem;
 }
 
+/*FOOTER*/
 .pie-pagina {
     background-color: #3c2218;
     color: #f7f3ef;
@@ -175,12 +192,3 @@ figcaption {
 }
 
 
-.tarjeta-articulo img {
-    width: 100%;
-    max-width: 450px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 10px;
-    display: block;
-    margin: 0.8rem 0;
-}
